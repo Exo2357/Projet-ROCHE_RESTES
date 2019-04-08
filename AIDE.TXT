@@ -1,0 +1,86 @@
+######################
+# TABLE DES MATIERES #
+######################
+#	Projet 			 #
+#	Prerequis 		 #
+#	Installation 	 #
+#	Troubleshoot 	 #
+#	Fichiers		 #
+#	Credits 		 #
+######################
+
+
+##########
+# PROJET #
+##########
+
+Licence informatique 2ème année (2018/2019)
+@ Sorbonne Université Sciences (UFR922)
+Module 2i013 - Projet Ecosystèmes et Agents
+
+Binôme: Thibault ROCHE & Celia RESTES
+Professeur : Nicolas BREDECHE (& Paul ECOFFET)
+
+#############
+# PREREQUIS #
+#############
+
+Dépendances majeures:
+
+JAVA						Simulation Eco/Agents
+Python OR Python3			Graphe des données
+python-matplotlib 2.2.2		Graphe des données
+Environnement linux			Makefile et gestion des terminaux
+
+Dépendances mineures (souvent incluses dans les majeures):
+
+matplotlib.pyplot
+matplotlib.gridspec
+matplotlib.animation
+matplotlib.style
+python-csv
+
+################
+# INSTALLATION #
+################
+
+Ouvrir un terminal dans le dossier Programme-RESTES_ROCHE
+
+$ make runx		Lance le programme (une fenetre)
+$ make show		Lance le programme d'analyse des données (deux fenetres)
+
+################
+# TROUBLESHOOT #
+################
+
+Si votre Env Linux ne permet pas l'execution de "x-terminal-emulator" :
+	$ make run 		Lance le programme dans le terminal actuel (une fenetre)
+
+puis, dans un terminal depuis Programme-RESTES_ROCHE/data
+	$ python plot_distrib.py 		Lance l'analyse des données statiques
+	$ python plot_data.py 			Lance l'analyse des données dynamiques
+
+
+############
+# FICHIERS #
+############
+
+Programme-RESTES_ROCHE contient:
+
+Manuel-RESTES_ROCHE.pdf	Manuel détaillé de la simulation
+AIDE.TXT				Manuel rapide
+README.MD 				Manuel rapide (copie de AIDE.TXT)
+
+Scrum-RESTES_ROCHE.pdf	Ensemble des documents SCRUM du projet
+scrum 					Contient les fichiers scrums par sprints
+
+Makefile				Permet le lancement des programmes
+src 					Contient les fichiers sources
+	data 				Contient les données statistiques
+	src_sprites 		Contient les sprites du programme
+
+
+###########
+# CREDITS #
+###########
+
