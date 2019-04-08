@@ -1,14 +1,12 @@
 ######################
 # TABLE DES MATIERES #
 ######################
-#	Projet 			 #
-#	Prerequis 		 #
-#	Installation 	 #
-#	Troubleshoot 	 #
-#	Fichiers		 #
-#	Credits 		 #
-######################
-
+	Projet
+	Prerequis
+	Installation
+	Troubleshoot
+	Fichiers
+	Credits
 
 ##########
 # PROJET #
@@ -32,19 +30,16 @@ Python OR Python3			Graphe des données
 python-matplotlib 2.2.2		Graphe des données
 Environnement linux			Makefile et gestion des terminaux
 
-Dépendances mineures (souvent incluses dans les majeures):
-
-matplotlib.pyplot
-matplotlib.gridspec
-matplotlib.animation
-matplotlib.style
-python-csv
 
 ################
 # INSTALLATION #
 ################
 
-Ouvrir un terminal dans le dossier Programme-RESTES_ROCHE
+Le téléchargement du programme se fait par github :
+ouvrir un terminal dans le dossier de son choix, pour y cloner le dossier du programme, puis entrer :
+	~$ git clone https://github.com/Exo2357/Projet-ROCHE_RESTES.git
+
+Ouvrir un terminal dans le dossier Programme-ROCHE_RESTES
 
 $ make runx		Lance le programme (une fenetre)
 $ make show		Lance le programme d'analyse des données (deux fenetres)
@@ -53,29 +48,41 @@ $ make show		Lance le programme d'analyse des données (deux fenetres)
 # TROUBLESHOOT #
 ################
 
-Si votre Env Linux ne permet pas l'execution de "x-terminal-emulator" :
-	$ make run 		Lance le programme dans le terminal actuel (une fenetre)
+1) Si make runx ne fonctionne pas, c'est que votre environnement Linux ne permet pas l'execution de "x-terminal-emulator" :
+Dans un terminal ouvert sur ~/Programme-ROCHE_RESTES entrez :
+	~$ make run 		Lance le programme dans le terminal actuel (une fenetre)
 
-puis, dans un terminal depuis Programme-RESTES_ROCHE/data
+puis, dans un terminal depuis Programme-ROCHE_RESTES/data entrez :
 	$ python plot_distrib.py 		Lance l'analyse des données statiques
 	$ python plot_data.py 			Lance l'analyse des données dynamiques
 
+2) si les graphes ne fonctionnent pas:
+Vérifier la version de matplotlib ainsi:
+Dans un terminal :
+	$ python
+	>>> import matplotlib
+	>>> matplotlib.__version__
+
+Voici entre autres les librairies appelées par matplotlib pour plot_data.py:
+matplotlib.pyplot
+matplotlib.gridspec
+matplotlib.animation
+matplotlib.style
+python-csv
 
 ############
 # FICHIERS #
 ############
 
-Programme-RESTES_ROCHE contient:
+Le dossier Projet-ROCHE_RESTES contient:
 
-Manuel-RESTES_ROCHE.pdf	Manuel détaillé de la simulation
-AIDE.TXT				Manuel rapide
-README.MD 				Manuel rapide (copie de AIDE.TXT)
+AIDE.TXT				Aide rapide
+Manuel-ROCHE_RESTES.pdf	Manuel détaillé de la simulation
+Scrum-ROCHE_RESTES.pdf	Ensemble des documents SCRUM du projet
 
-Scrum-RESTES_ROCHE.pdf	Ensemble des documents SCRUM du projet
-scrum 					Contient les fichiers scrums par sprints
-
-Makefile				Permet le lancement des programmes
-src 					Contient les fichiers sources
+Programme-ROCHE_RESTES contient:
+	Makefile			Permet le lancement des programmes
+	src 				Contient les fichiers sources
 	data 				Contient les données statistiques
 	src_sprites 		Contient les sprites du programme
 
@@ -84,3 +91,4 @@ src 					Contient les fichiers sources
 # CREDITS #
 ###########
 
+Voir manuel détaillé section Crédits

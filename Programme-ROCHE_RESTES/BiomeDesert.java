@@ -1,10 +1,10 @@
 public class BiomeDesert extends Biomes{
 
-	public static double TREE_DENSITY = 0.2;		// 0.0 densité faible à 1.0 densité forte
-	public static double BUSH_DENSITY = 0.4;		// 0.0 densité faible à 1.0 densité forte
+	public static double TREE_DENSITY = 0.3;		// 0.0 densité faible à 1.0 densité forte
+	public static double BUSH_DENSITY = 0.2;		// 0.0 densité faible à 1.0 densité forte
 	public static double ROCK_DENSITY = 0.3;		// 0.0 densité faible à 1.0 densité forte
 	public static int TREE_REGROWTH_RATE = 4;		// 1:rapide, 2,3,...: +en+ lent
-	public static int BUSH_REGROWTH_RATE = 4;		// 1:rapide, 2,3,...: +en+ lent
+	public static int BUSH_REGROWTH_RATE = 6;		// 1:rapide, 2,3,...: +en+ lent
 	
 	// constructor
 	// les arguments: int biomeID, int nbCells, double treeDensity, double rockDensity, double bushDensity

@@ -10,18 +10,18 @@ public abstract class Agents{
 	protected static int MAX_HEALTH = 100;			//vie de l'agent, 0=mort
 
 	protected static int MAX_HUNGER = 100;			// la faim de l'agent
-	protected static int HUNGRY = 80;				// commence à avoir faim
+	protected static int HUNGRY = 20;				// commence à avoir faim
 	protected static int HUNGER_DMG = 2;			// dégâts recu si hunger<=0
 	protected static int FREQ_DMG_HUNGER = 3;		// toutes les FREQ_DMG_HUNGER l'agent s'affame
 	protected static int EATING_DURATION = 15;		// nombre cycle requis pour manger
 	
 	protected static int MAX_ENERGY = 100;			// energie lié au sommeil
 	protected static int LOW_ENERGY = 20;			// commence à vouloir dormir
-	protected static int SLEEP_DMG = 2;			// dégats si energie <= 0
-	protected static int FREQ_DMG_SLEEP = 10;		// toutes les FREQ_DMG_SLEEP l'agent se fatigue
+	protected static int SLEEP_DMG = 2;				// dégats si energie <= 0
+	protected static int FREQ_DMG_SLEEP = 3;		// toutes les FREQ_DMG_SLEEP l'agent se fatigue
 	protected static int SLEEPING_DURATION = 30;		// nombre cycle requis un sommeil complet
 	
-	protected static int ADULT_AGE = 500;			// nombre cycle avant maturation
+	protected static int ADULT_AGE = 400;			// nombre cycle avant maturation
 	protected static int PREGNANCY_DURATION = 200;	// nombre de cycle avant de pouvoir à nouveau avoir un bébé
 	public static double P_REPRODUCTION = 0.01;		// probabilité de reproduction
 

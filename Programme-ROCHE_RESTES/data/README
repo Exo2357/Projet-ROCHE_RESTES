@@ -50,9 +50,9 @@ Soit par champs de 0 à 18 tels que:
 Requiert matplotlib et csv
 
 Ce programme python standalone affiche la distribution des biomes sous forme de pie chart.
-Il doit être lancé DEPUIS LE DOSSIER COURANT du projet avec la commande:
+Il doit être lancé depuis ~/Projet-ROCHE_RESTES/Programme-ROCHE_RESTES avec la commande:
 	make show	
-Le cas échéant peut être lancé depuis projet/data/ avec :
+Le cas échéant peut être lancé depuis ~/Projet-ROCHE_RESTES/Programme-ROCHE_RESTES/data avec :
 	python plot_distrib.py
 La figure reste ouverte et monopolise le shell jusqu'à sa fermeture [x].
 
@@ -63,9 +63,9 @@ La figure reste ouverte et monopolise le shell jusqu'à sa fermeture [x].
 
 Requiert matplotlib 2.2.2 et csv
 
-Ce programme python(2) affiche les données de la faune et de la flore.
-Il doit être lancé depuis le dossier courant du projet avec la commande:
+Ce programme python affiche les données de la faune et de la flore.
+Il doit être lancé depuis le ~/Projet-ROCHE_RESTES/Programme-ROCHE_RESTES avec la commande:
 	make show
-Le cas échéant peut être lancé depuis projet/data/ avec :
+Le cas échéant peut être lancé depuis ~/Projet-ROCHE_RESTES/Programme-ROCHE_RESTES/data avec :
 	python plot_data.py
 La figure reste ouverte et monopolise le shell jusqu'à sa fermeture [x].

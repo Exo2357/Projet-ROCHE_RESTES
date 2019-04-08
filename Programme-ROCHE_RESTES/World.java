@@ -33,7 +33,7 @@ public class World extends JPanel {
 	
 	// NE PAS OUBLIER : de make clean quand on change SPRITE_LENGTH
 	public static int SPRITE_LENGTH = 32;
-	public static double BIOME_SIZE_EQUALITY_RATE = 0.2;
+	public static double BIOME_SIZE_EQUALITY_RATE = 0.3;	// 0: forte variabilité des surface 1: biome identiques
 	public static double P_FIREFOX = 0.1;
 	public static double P_ICEWEASEL = 0.1;
 
@@ -248,7 +248,7 @@ public class World extends JPanel {
 				}
 				//System.out.println("fin de while(list) cellsRemain : "+cellsRemain);
 			}catch (FailSpreadException e){
-				System.out.println("Exception thrown  : " + e.getMessage());
+				//System.out.println("Exception thrown  : " + e.getMessage());
 			}
 		}
 		
